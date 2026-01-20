@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test/teststyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+</head>
+<body>
+  <div class="fullpage">
+    <div class="landingpage">
+        <div class="navbar">
+            <div class="left"><div class="navname"><h1>GROWX</h1></div> </div>
+             
+            <div class="right">
+              <button class="light"><i class="fa-regular fa-lightbulb"></i></button>
+              <ul class="navlink">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Performance</a></li>
+              <li><a href="#">Contact Us</a></li>
+              </ul>
+              <div class="humburger">☰</div>
+            </div>
+
+
+        </div>
+        <div class="hero">
+            <div class="heroleft">
+                <span class="hero-badge">
+    ✨ #1 Crypto Trading Platform
+  </span>
+
+  <h1 class="hero-title">
+    <span class="trade-box">GrowX</span>
+    <span class="crypto-text"></span><br>
+    <span class="pro-text">Grow like a pro</span>
+  </h1>
+
+  <p class="hero-desc">
+    Advanced trading tools, lightning-fast execution, and
+    unmatched security. Join millions of traders worldwide.
+  </p>
+
+  <div class="hero-actions">
+    <button class="btn primary">
+      Start Trading Free →
+    </button>
+
+    <button class="btn secondary">
+      ▶ Explore Markets
+    </button>
+  </div>
+
+  <div class="hero-features">
+    <span>✔ Secure Trading</span>
+    <span>✔ Real-time Data</span>
+              <span>✔ 24/7 Support</span>
+           </div>
+            </div>
+             <div class="heroright">
+               <div class="market-card">
+      <div class="market-header">
+        <h3>Live Markets</h3>
+        <span class="live-dot">Live</span>
+      </div>
+
+      <div class="market-list">
+        <div class="coin" data-id="ethereum">
+          <div class="coin-left">
+            <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" />
+            <div>
+              <p>ETH</p>
+              <span>ETHUSDT</span>
+            </div>
+          </div>
+          <div class="coin-right">
+            <p class="price" id="eth-price">—</p>
+            <span class="change" id="eth-change">—</span>
+          </div>
+        </div>
+
+        <div class="coin" data-id="bitcoin">
+          <div class="coin-left">
+            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" />
+            <div>
+              <p>BTC</p>
+              <span>BTCUSDT</span>
+            </div>
+          </div>
+          <div class="coin-right">
+            <p class="price" id="btc-price">—</p>
+            <span class="change" id="btc-change">—</span>
+          </div>
+        </div>
+
+        <div class="coin" data-id="solana">
+          <div class="coin-left">
+            <img src="https://cryptologos.cc/logos/solana-sol-logo.png" />
+            <div>
+              <p>SOL</p>
+              <span>SOLUSDT</span>
+            </div>
+          </div>
+          <div class="coin-right">
+            <p class="price" id="sol-price">—</p>
+            <span class="change" id="sol-change">—</span>
+          </div>
+        </div>
+
+        <div class="coin" data-id="gold">
+  <div class="coin-left">
+    <img src="assets/gold.jpg" />
+    <div>
+      <p>GOLD</p>
+      <span>XAU / USD</span>
+    </div>
+  </div>
+  <div class="coin-right">
+    <p class="price" id="gold-price">—</p>
+    <span class="change" id="gold-change">Live</span>
+  </div>
+</div>
+
+<div class="coin" data-id="silver">
+  <div class="coin-left">
+    <img src="assets/silver.jpg" />
+    <div>
+      <p>SILVER</p>
+      <span>XAG / USD</span>
+    </div>
+  </div>
+  <div class="coin-right">
+    <p class="price" id="silver-price">—</p>
+    <span class="change" id="silver-change">Live</span>
+  </div>
+</div>
+
+
+        
+      </div>
+
+      <button class="view-btn">View All Markets →</button>
+               </div>
+             </div>
+        </div>
+    </div>
+    <section class="trade-section">
+  <h1>We Trade</h1>
+
+  <div class="trade-grid">
+
+    <div class="trade-card">
+      <i class="fa-solid fa-gem spin3d"></i>
+      <p>COMMODITY</p>
+    </div>
+
+    <div class="trade-card">
+      <i class="fa-brands fa-bitcoin spin3d"></i>
+      <p>CRYPTO</p>
+    </div>
+
+    <div class="trade-card">
+      <i class="fa-solid fa-indian-rupee-sign spin3d"></i>
+      <p>CURRENCY</p>
+    </div>
+
+    <div class="trade-card">
+      <i class="fa-solid fa-chart-line spin3d"></i>
+      <p>EQUITY</p>
+    </div>
+
+  </div>
+
+  <div class="btn-group">
+    <button class="btn green">GET PREMIUM GROUP ACCESS</button>
+    <button class="btn red">WHATSAPP US</button>
+  </div>
+</section>
+
+<section class="ps-section">
+
+  <h2 class="ps-heading">
+    Choose the plan that's right for Growing up
+  </h2>
+
+  <div class="swiper psSwiper">
+    <div class="swiper-wrapper">
+
+      <!-- SLIDE1 -->
+      <div class="swiper-slide">
+        <div class="ps-slide">
+          <img src="/assets/goldimage.webp" />
+
+          <div class="ps-overlay">
+            <h3>Commodity Package</h3>
+
+            <p class="ps-price">
+              ₹35,499/wk <span>₹45,499/mo</span>
+            </p>
+
+            <ul>
+              <li>✔ 3–4 Free Trading Calls</li>
+              <li>✔ Weekly Package</li>
+              <li>✔ Monthly Package</li>
+            </ul>
+
+            <div class="ps-buttons">
+              <a href="tel:+919259485189" class="btn green">CALL US</a>
+              <a href="#" class="btn red">GET DETAILS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE2 -->
+      <div class="swiper-slide">
+        <div class="ps-slide">
+          <img src="/assets/cryptoimage.webp" />
+
+          <div class="ps-overlay">
+            <h3>Crypto Package</h3>
+
+            <p class="ps-price">
+              ₹55,499/wk <span>₹65,499/mo</span>
+            </p>
+
+            <ul>
+              <li>✔ 3–4 Free Trading Calls</li>
+              <li>✔ Weekly Package</li>
+              <li>✔ Monthly Package</li>
+            </ul>
+
+            <div class="ps-buttons">
+              <a href="tel:+919259485189" class="btn green">CALL US</a>
+              <a href="#" class="btn red">GET DETAILS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE3 -->
+      <div class="swiper-slide">
+        <div class="ps-slide">
+          <img src="/assets/equityimage.jpeg" />
+
+          <div class="ps-overlay">
+            <h3>Equity Package</h3>
+
+            <p class="ps-price">
+              ₹25,499/wk <span>₹35,499/mo</span>
+            </p>
+
+            <ul>
+              <li>✔ 3–4 Free Trading Calls</li>
+              <li>✔ Weekly Package</li>
+              <li>✔ Monthly Package</li>
+            </ul>
+
+            <div class="ps-buttons">
+              <a href="tel:+919259485189" class="btn green">CALL US</a>
+              <a href="#" class="btn red">GET DETAILS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- SLIDE -->
+      <div class="swiper-slide">
+        <div class="ps-slide">
+          <img src="/assets/currencyimage.png" />
+
+          <div class="ps-overlay">
+            <h3>Currency Package</h3>
+
+            <p class="ps-price">
+              ₹25,499/wk <span>₹35,499/mo</span>
+            </p>
+
+            <ul>
+              <li>✔ 3–4 Free Trading Calls</li>
+              <li>✔ Weekly Package</li>
+              <li>✔ Monthly Package</li>
+            </ul>
+
+            <div class="ps-buttons">
+              <a href="tel:+919259485189" class="btn green">CALL US</a>
+              <a href="#" class="btn red">GET DETAILS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- SLIDE -->
+      <div class="swiper-slide">
+        <div class="ps-slide">
+          <img src="/assets/equityimage.jpeg" />
+
+          <div class="ps-overlay">
+            <h3>Equity Package</h3>
+
+            <p class="ps-price">
+              ₹25,499/wk <span>₹35,499/mo</span>
+            </p>
+
+            <ul>
+              <li>✔ 3–4 Free Trading Calls</li>
+              <li>✔ Weekly Package</li>
+              <li>✔ Monthly Package</li>
+            </ul>
+
+            <div class="ps-buttons">
+              <a href="tel:+919259485189" class="btn green">CALL US</a>
+              <a href="#" class="btn red">GET DETAILS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+</section>
+
+    <section class="review-section">
+  <p class="review-small">Reviews</p>
+  <h2 class="review-title">
+    Client's <span>Testimonials</span>
+  </h2>
+
+  <div class="review-swiper">
+    <div class="review-track">
+
+      <!-- CARD -->
+      <div class="review-card">
+        <div class="review-head">
+          <div class="avatar">
+            <span class="user-icon"></span>
+          </div>
+          <div>
+            <h4>Manoj Gupta</h4>
+            <small>Business Owner</small>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>Very reliable trading guidance. I finally feel confident with Mr. ritesh .he is very good in trading.always ready for new challeneges.i personally recommend mr.ritesh to quite trading before its too late</p>
+        <span class="accent"></span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="avatar"><span class="user-icon"></span></div>
+          <div>
+            <h4>Saloni Taneja</h4>
+            <small>Trader</small>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>The strategies are practical and easy to follow. Highly recommended.he is very good in trading.always ready for new challeneges.i personally recommend mr.ritesh to quite trading before its too late</p>
+        <span class="accent"></span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="avatar"><span class="user-icon"></span></div>
+          <div>
+            <h4>Rahul Sharma</h4>
+            <small>Part-time Trader</small>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>Helped me reduce losses and improve consistency in my trades.he is very good in trading.always ready for new challeneges.i personally recommend mr.ritesh to quite trading before its too late</p>
+        <span class="accent"></span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="avatar"><span class="user-icon"></span></div>
+          <div>
+            <h4>Pooja Verma</h4>
+            <small>Beginner</small>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>Perfect for beginners. Clear explanations and strong support.he is very good in trading.always ready for new challeneges.i personally recommend mr.ritesh to quite trading before its too late</p>
+        <span class="accent"></span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="avatar"><span class="user-icon"></span></div>
+          <div>
+            <h4>Amit Singh</h4>
+            <small>Intraday Trader</small>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>Accurate market insights and disciplined trading approach.he is very good in trading.always ready for new challeneges.i personally recommend mr.ritesh to quite trading before its too late</p>
+        <span class="accent"></span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="avatar"><span class="user-icon"></span></div>
+          <div>
+            <h4>Neha Kapoor</h4>
+            <small>Investor</small>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>Long-term perspective helped me plan my investments better.he is very good in trading.always ready for new challeneges.i personally recommend mr.ritesh to quite trading before its too late</p>
+        <span class="accent"></span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+   <footer class="about-footer">
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <div class="brand-logo">C</div>
+      <h2>GrowX</h2>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        <strong>GrowX</strong> is a new age stocks market analysis firm who have
+        made day trading very easy. Delivering freedom to all traders and
+        investors to not only trade live with them but also copy trades.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Our Performance</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h3>Contact Info</h3>
+      <p>ORR, 4th Floor JP Nagar 4th Phase,<br>Bengaluru - 560076</p>
+      <p>growx@gmail.com</p>
+      <p>+91 92594 85189</p>
+
+      <div class="socials">
+        <span>✉</span>
+        <span>📷</span>
+        <span>▶</span>
+        <span>✈</span>
+        <span>💬</span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+</div>
+
+    <script src="script.js"></script>
+    <script src="test/testscript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+new Swiper(".psSwiper", {
+  slidesPerView: 1.2,
+  centeredSlides: true,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1.4
+    },
+    1200: {
+      slidesPerView: 1.8
+    }
+  }
+});
+</script>
+
+
+</body>
+</html>
